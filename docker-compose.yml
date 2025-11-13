@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  redis:
+    image: redis
+    container_name: redis
+
+  rocketcounter:
+    image: rotorocloud/rocket-counter
+    ports:
+      - "0:5000" # хост выберет свободный порт автоматически
+    depends_on:
+      - redis
+# version: "3.8"
+
+# services:
+#   redis:
+#     image: redis
+#     container_name: redis
+
+#   rocketcounter:
+#     image: rotorocloud/rocket-counter
+#     container_name: rocketcounter
+#     ports:
+#       - "8085:5000"
+#     depends_on:
+#       - redis
