@@ -3,23 +3,50 @@
 Отчёт
 
 Создание redis
+
 ![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/4ed5fc07fc734304b471ab73634d2a95552feb70/images/init_redis.png)
 
 Проверка
 
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/redis_check.png)
+
 http://localhost:8085 :
+
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/localhost8085.png)
 
 Удаление контейнеров
 
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/containers_delete.png)
+
+Запуск
+
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/compose_init.png)
+
 Проверка
+
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/compose_check_1.png)
+
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/compose_check_2.png)
 
 Применение изменений и масштаб
 
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/changes.png)
+
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/scaling.png)
+
 Подобрало два порта: 32768 и 32769
+
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/localhost32768.png)
+
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/localhost32769.png)
 
 Полное уничтожение стека
 
+![image alt](https://github.com/kawaiiRichard/docker-3rd-lab/blob/a9a39ffc452a61df995e22a54455bf7a89c326e8/images/whole_stack_delete.png)
+
 32768-й порт
+
+
 
 32769-й порт
 
@@ -49,4 +76,5 @@ docker compose down -v - дополнительно удаляет именов�
 
 5. Как в Compose обеспечивается сетевое имя сервиса для обращения из другого сервиса?
    Compose создает DNS-записи для каждого сервиса. Имя сервиса в docker-compose.yml становится hostname'ом в сети. Например, сервис redis доступен по имени redis из других сервисов.
+
 
